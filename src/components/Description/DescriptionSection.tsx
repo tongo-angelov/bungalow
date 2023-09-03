@@ -16,7 +16,7 @@ export default function DescriptionSection({
         <h1 className="my-6 text-3xl font-semibold text-foreground/90">
           {title}
         </h1>
-        <p className="w-2/3 font-semibold leading-8 text-foreground/80">
+        <p className="w-3/4 font-semibold leading-8 text-foreground/80 lg:w-2/3">
           {text}
         </p>
       </Container>
