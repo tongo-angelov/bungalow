@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://svetinikola-montana.com
+
+# Sitemaps
+Sitemap: https://svetinikola-montana.com/sitemap.xml
