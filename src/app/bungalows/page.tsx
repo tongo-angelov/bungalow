@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Бунгала",
 };
 
-export default function Home() {
+export default function Bungalows() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <h1>bungalows</h1>
