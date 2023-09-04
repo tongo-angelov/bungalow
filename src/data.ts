@@ -38,11 +38,11 @@ export const metadata: Metadata = {
 };
 
 export const map = {
-  latitude: "43.390224",
-  longitude: "23.216246",
+  latitude: "43.3902063",
+  longitude: "23.2160587",
   key: process.env.MAP_KEY,
   icon: "http://tinyurl.com/jrhlvu6",
-  url: "https://www.google.com/maps/place/43%C2%B023'24.8%22N+23%C2%B012'58.2%22E/@43.39022,23.2162465,18z",
+  url: "https://www.google.com/maps/contrib/116971272394023368285",
 };
 
 export const description = {
