@@ -9,7 +9,7 @@ export default function Section({
 }) {
   return (
     <section
-      className={`w-full ${className}`}
+      className={`w-full bg-cover bg-center bg-no-repeat ${className}`}
       style={{ backgroundImage: `url(${image})` }}
     >
       {children}

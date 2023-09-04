@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
-import MapSection from "@/components/Map/MapSection";
+import DescriptionSection from "@/components/Description/DescriptionSection";
+import Section from "@/components/Section/Section";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,14 +11,24 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <h1>about us</h1>
-      <MapSection
-        className="my-8"
-        width="800"
-        height="300"
-        scale={2}
-        zoom={15}
+      <DescriptionSection
+        title="Открихме в себе си желание да споделим тази непокътната красота с хората, които търсят място за уединение и спокойствие сред природата."
+        text="Създадохме вилно селище „Свети Никола“ с мисията да направим този кът на рая достъпен за всеки, който желае да се потопи в магията на дивата природа, без да прави компромис с удобството и комфорта."
       />
+
+      <Section className="bg-fixed" image="/images/about_1.jpg">
+        <div className="h-[600px]"></div>
+      </Section>
+
+      <DescriptionSection
+        className="mb-10"
+        title="За нас беше важно не просто да предложим място за престой, но и да създадем обстановка, която да отвори сърцата на нашите гости към прекрасната природа, която ни заобикаля."
+        text="Ние се стремим да осигурим перфектната баланс между комфорт и приключение, да направим престоя ви специален и незабравим. Мисията на „Свети Никола“ е да ви подари място, където времето забавя хода си, където може да се срещнете с природата и да откриете нови измерения на собственото си спокойствие и щастие. Защото ние вярваме, че всеки заслужава да има достъп до тази красота и спокойствие. Уверени сме, че всяка минута, прекарана тук, ще ви подари моменти на спокойствие, хармония и благоденствие. За нас, вилно селище „Свети Никола“ не е просто място за настаняване, то е райско място, където можем да прекараме време заедно, да се свържем с природата и да открием спокойствието в сърцето на българската дивина."
+      />
+
+      <Section className="bg-fixed" image="/images/about_2.jpg">
+        <div className="h-[600px]"></div>
+      </Section>
     </main>
   );
 }
