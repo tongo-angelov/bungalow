@@ -21,7 +21,7 @@ export default function Map({
     <a href={url} className={`flex justify-center ${className}`}>
       <img
         className="rounded-xl shadow-md"
-        src={`https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&scale=${scale}&zoom=${zoom}&size=${width}x${height}&markers=icon:${icon}|${latitude},${longitude}&key=${key}`}
+        src={`https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&scale=${scale}&zoom=${zoom}&size=${width}x${height}&markers=color:blue|label:S|${latitude},${longitude}&key=${key}`}
         alt="google map"
       />
     </a>

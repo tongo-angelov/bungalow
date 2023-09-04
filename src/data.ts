@@ -41,7 +41,7 @@ export const map = {
   latitude: "43.3902063",
   longitude: "23.2160587",
   key: process.env.MAP_KEY,
-  icon: "http://tinyurl.com/jrhlvu6",
+  icon: "https://svetinikola-montana.com/images/marker.png",
   url: "https://www.google.com/maps/contrib/116971272394023368285",
 };
 
