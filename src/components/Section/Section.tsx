@@ -10,7 +10,7 @@ export default function Section({
   return (
     <section
       className={`w-full bg-cover bg-center bg-no-repeat ${className}`}
-      style={{ backgroundImage: `url(${image})` }}
+      style={image ? { backgroundImage: `url(${image})` } : undefined}
     >
       {children}
     </section>
