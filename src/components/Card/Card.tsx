@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Card({
   image,
@@ -13,7 +13,7 @@ export default function Card({
 }) {
   return (
     <div className="overflow-hidden rounded-2xl bg-background shadow-lg">
-      <img
+      <ExportedImage
         className="w-full"
         src={image}
         alt={title}

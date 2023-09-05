@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+import ExportedImage from "next-image-export-optimizer";
+
 import NavLink from "./NavLink";
 import Container from "@/components/Container/Container";
 
@@ -9,7 +10,7 @@ export default function NavBar() {
         <Container className="flex justify-between">
           <div className="w-16">
             <NavLink href="/">
-              <img
+              <ExportedImage
                 src={"/images/logo.png"}
                 alt="Logo"
                 width={395}

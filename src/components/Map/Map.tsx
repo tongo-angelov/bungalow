@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import ExportedImage from "next-image-export-optimizer";
 
 import { map } from "@/data";
 
@@ -15,18 +15,20 @@ export default function Map({
   zoom?: number;
   scale?: number;
   noMarkers?: boolean;
-  width: string;
-  height: string;
+  width: number;
+  height: number;
   className?: string;
 }) {
   return (
     <a href={url} className={`flex justify-center ${className}`}>
-      <img
+      <ExportedImage
         className="rounded-xl shadow-md"
         src={`https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&scale=${scale}&zoom=${zoom}&size=${width}x${height}&markers=color:blue|label:S|${latitude},${longitude}&key=${key}${
           noMarkers ? "&style=feature:poi|visibility:off" : ""
         }`}
         alt="google map"
+        width={width}
+        height={height}
       />
     </a>
   );

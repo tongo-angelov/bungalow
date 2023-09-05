@@ -35,7 +35,7 @@ export default function Contacts() {
           </div>
         </Container>
         <Container className="flex flex-col gap-4">
-          <Map width="800" height="400" zoom={13} scale={1} noMarkers />
+          <Map width={800} height={400} zoom={13} scale={1} noMarkers />
           <h3 className="text-center text-xl font-medium">
             {contacts.address.street}, {contacts.address.city}
           </h3>

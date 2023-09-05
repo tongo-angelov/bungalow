@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import ExportedImage from "next-image-export-optimizer";
 
 import { contacts } from "@/data";
 import Container from "@/components/Container/Container";
@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-12 text-center md:flex-row md:items-start">
             <div className="flex flex-1 flex-col items-center">
               <div className="w-48 pb-4">
-                <img
+                <ExportedImage
                   src={"/images/logo.png"}
                   alt="Logo"
                   width={395}
@@ -38,7 +38,7 @@ export default function Footer() {
               <p>{contacts.address.city}</p>
             </div>
             <div className="flex-1">
-              <Map width="300" height="300" scale={1} zoom={15} />
+              <Map width={300} height={300} scale={1} zoom={15} />
             </div>
           </div>
         </Container>

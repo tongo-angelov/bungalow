@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-
 import DescriptionSection from "@/components/Description/DescriptionSection";
 import Section from "@/components/Section/Section";
 import type { Metadata } from "next";

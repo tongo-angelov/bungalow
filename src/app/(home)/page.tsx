@@ -30,7 +30,14 @@ export default function Home() {
           className={index % 2 ? "bg-muted shadow-sm" : ""}
           key={title}
           imageLeft={!(index % 2)}
-          image={<DetailsImage image={image.src} alt={image.alt} />}
+          image={
+            <DetailsImage
+              image={image.src}
+              width={image.width}
+              height={image.height}
+              alt={image.alt}
+            />
+          }
           text={
             <DetailsText title={title} text={text}>
               {action && (
