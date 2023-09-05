@@ -25,6 +25,22 @@ export const metadata: Metadata = {
     "язовир монтана",
   ],
   metadataBase: baseURL,
+  openGraph: {
+    title: 'Вилно селище "Свети Никола"',
+    description:
+      'Вилно селище "Свети Никола" гр.Монтана, бунгала и стаи под наем',
+    url: baseURL,
+    siteName: 'Вилно селище "Свети Никола"',
+    images: [
+      {
+        url: "/images/og.png",
+        width: 768,
+        height: 591,
+      },
+    ],
+    locale: "bg_BG",
+    type: "website",
+  },
   authors: [
     {
       url: "https://github.com/tongo-angelov",
