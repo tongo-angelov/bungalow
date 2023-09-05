@@ -38,3 +38,7 @@ next-env.d.ts
 # optimised images
 /public/images/nextImageExportOptimizer
 /public/images/next-image-export-optimizer-hashes.json
+
+# built sitemap
+/public/sitemap.xml
+/public/sitemap-0.xml
