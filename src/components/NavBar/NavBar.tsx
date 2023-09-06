@@ -20,8 +20,8 @@ export default function NavBar() {
           </div>
           <div className="flex items-center justify-between gap-6 ">
             <NavLink href="/bungalows">Бунгала</NavLink>
-            <NavLink href="/contacts">Контакти</NavLink>
             <NavLink href="/about">За нас</NavLink>
+            <NavLink href="/contacts">Контакти</NavLink>
           </div>
         </Container>
       </nav>

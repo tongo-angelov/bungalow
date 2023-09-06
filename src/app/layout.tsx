@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 
-import { metadata as meta } from "@/data";
 import NavBar from "@/components/NavBar/NavBar";
 import Footer from "@/components/Footer/Footer";
+import CookiesConsent from "@/components/CookiesConsent/CookiesConsent";
+import { metadata as meta } from "@/data";
 
 import "./globals.css";
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <CookiesConsent />
       </body>
     </html>
   );
