@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import Card from "@/components/Card/Card";
 import CardSection from "@/components/Card/CardSection";
-import Carousel from "@/components/Carousel/Carousel";
 import DescriptionSection from "@/components/Description/DescriptionSection";
 import DetailsImage from "@/components/Details/DetailsImage";
 import DetailsSection from "@/components/Details/DetailsSection";
@@ -15,9 +14,32 @@ import { cards, description, details, icons, quote as q } from "@/data";
 const { quote, author } = q;
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Монтана",
+      addressRegion: "BG",
+      postalCode: "3400",
+      streetAddress: "бул. Монтана",
+    },
+    image: ["https://svetinikola-montana.com/images/details_1.png"],
+    name: "Вилно селище „Свети Никола“",
+    description:
+      "Вилно селище „Свети Никола“ гр.Монтана, бунгала и стаи под наем",
+    priceRange: "$$",
+    telephone: "+359 98 870 9990",
+    url: "https://svetinikola-montana.com/",
+    logo: "https://svetinikola-montana.com/images/logo.png",
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      {/* <Carousel /> */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       <DescriptionSection
         className="my-8"
