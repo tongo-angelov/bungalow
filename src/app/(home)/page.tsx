@@ -9,6 +9,8 @@ import DetailsText from "@/components/Details/DetailsText";
 import Icon from "@/components/Icon/Icon";
 import IconSection from "@/components/Icon/IconSection";
 import QuoteSection from "@/components/Quote/QuoteSection";
+import FriendsSection from "@/components/Friends/Friends";
+
 import { cards, description, details, icons, quote as q } from "@/data";
 
 const { quote, author } = q;
@@ -24,7 +26,11 @@ export default function Home() {
       postalCode: "3400",
       streetAddress: "бул. Монтана",
     },
-    image: ["https://svetinikola-montana.com/images/details_1.png"],
+    image: [
+      "https://svetinikola-montana.com/images/details_1.png",
+      "https://svetinikola-montana.com/images/bungalow_1.png",
+      "https://svetinikola-montana.com/images/bungalow_2.png",
+    ],
     name: "Вилно селище „Свети Никола“",
     description:
       "Вилно селище „Свети Никола“ гр.Монтана, бунгала и стаи под наем",
@@ -89,7 +95,12 @@ export default function Home() {
           <Icon key={title} image={image} title={title} />
         ))}
       </IconSection>
-      <QuoteSection className=" my-20" quote={quote} author={author} />
+      <QuoteSection
+        className="my-10 bg-muted py-10"
+        quote={quote}
+        author={author}
+      />
+      <FriendsSection className="mb-10 pb-10" />
     </main>
   );
 }

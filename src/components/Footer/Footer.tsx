@@ -2,6 +2,7 @@ import ExportedImage from "next-image-export-optimizer";
 
 import Container from "@/components/Container/Container";
 import Section from "@/components/Section/Section";
+import SocialIcons from "../SocialIcons/SocialIcons";
 import { contacts } from "@/data";
 
 export default function Footer() {
@@ -19,12 +20,13 @@ export default function Footer() {
                   height={395}
                 />
               </div>
-              <p className="font-semibold">
+              <p className="pb-6 font-semibold">
                 Оазис на спокойствие за Вашият идеален отдих &nbsp;
                 <span className="whitespace-nowrap">
                   Вилно селище „Свети Никола“
                 </span>
               </p>
+              <SocialIcons className="" />
             </div>
             <div className="flex-1">
               <h4 className="pb-10 text-xl font-bold">Свържете се с нас</h4>
